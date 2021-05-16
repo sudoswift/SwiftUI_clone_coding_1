@@ -9,16 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    static let dateFormat: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "YYYY년 M월 d일"
-        return formatter
-    }()
-    
-    var today = Date()
-    
     var body: some View {
-        Text("#6 Start")
+        CircleImageView()
     }
 }
 

@@ -17,11 +17,12 @@ struct CircleImageView: View {
             Image("myImage")
                 .resizable() // Image 에서는 resizable modifier이 국룰
                 .scaledToFit()
-                .frame(width: 400, height: 500, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 300, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 //                .aspectRatio(contentMode: .fill) // 사진 비율 선택
 //                .frame(width:200) // frame 밑에 clipped를 써서 사진을 자를 수 있다.
                 .edgesIgnoringSafeArea(.all) // 화면에 꽉차게 채울지 말지 선택
                 .clipShape(Circle()) // make image circle
+                .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 8, x: 6, y: 6)
                 .overlay(Circle())
                 .foregroundColor(.black)
                 .opacity(0.48)
