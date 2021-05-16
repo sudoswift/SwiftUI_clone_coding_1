@@ -22,8 +22,11 @@ struct CircleImageView: View {
 //                .frame(width:200) // frame 밑에 clipped를 써서 사진을 자를 수 있다.
                 .edgesIgnoringSafeArea(.all) // 화면에 꽉차게 채울지 말지 선택
                 .clipShape(Circle()) // make image circle
+                .overlay(Circle())
+                .foregroundColor(.black)
+                .opacity(0.48)
                 .overlay(
-                    Circle().strokeBorder(Color.green, lineWidth: 10)
+                    Circle().strokeBorder(Color.red, lineWidth: 10)
                         .padding()
                 )
                 .overlay(
@@ -31,7 +34,15 @@ struct CircleImageView: View {
                         .padding(30)
                 )
                 .overlay(
-                    Circle().strokeBorder(Color.blue, lineWidth: 8)
+                    Circle().strokeBorder(Color.blue, lineWidth: 10)
+                )
+                .overlay(
+                    Text("Lee")
+                        .font(.system(size: 50))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                        .shadow(radius: 10)
+                        
                 )
         }
     }
