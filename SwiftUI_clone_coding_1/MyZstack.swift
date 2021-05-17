@@ -25,6 +25,27 @@ struct MyZstack: View {
                     .foregroundColor(.green)
                     .offset(x: 40, y: 40)
                 )
+            Spacer()
+                .frame(height:50)
+            Text("this is overlay")
+            Spacer()
+                .frame(height: 100)
+            ZStack{
+                        Circle()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        Circle()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.red)
+                            .offset(x: 20, y: 20)
+                        Circle()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.green)
+                            .offset(x: 40, y: 40)
+                    }
+            Spacer()
+                .frame(height:50)
+            Text("this is ZStack")
         }
     }
 }
