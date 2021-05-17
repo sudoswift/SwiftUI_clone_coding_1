@@ -9,7 +9,23 @@ import SwiftUI
 
 struct MyHstack: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(alignment: .bottom){
+            
+            Divider()
+                .opacity(0)
+            
+            Rectangle()
+                .frame(width: 100, height: 100)
+                .foregroundColor(.red)
+            Rectangle()
+                .frame(width: 100, height: 100)
+                .foregroundColor(.yellow)
+            Rectangle()
+                .frame(width: 100, height: 100)
+                .foregroundColor(.blue)
+        }
+        .padding()
+        .background(Color.green)
     }
 }
 
