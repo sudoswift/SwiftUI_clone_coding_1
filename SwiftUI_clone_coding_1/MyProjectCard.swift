@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyProjectCard: View {
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading, spacing: 0){
             Rectangle()
                 .frame(height: 0)
             Text("sudo 클론 프로젝트")
