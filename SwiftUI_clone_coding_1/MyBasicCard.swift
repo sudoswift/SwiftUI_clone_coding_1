@@ -9,7 +9,22 @@ import SwiftUI
 
 struct MyBasicCard: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Image(systemName: "flame.fill")
+                .font(.system(size: 50))
+                .foregroundColor(.white)
+            VStack(alignment: .leading){
+                Text("유튜브 클론 프로젝트")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.bottom, 3)
+                Text("8PM ~ 10PM")
+            }
+            .foregroundColor(.white)
+        }
+        .padding()
+        .background(Color.purple)
+        .cornerRadius(20)
     }
 }
 
