@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1523B22654202A009C197C /* MyProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1523B12654202A009C197C /* MyProjectCard.swift */; };
 		6F8D095E264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8D095D264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift */; };
 		6F8D0960264C25FF0021B219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8D095F264C25FF0021B219 /* ContentView.swift */; };
 		6F8D0962264C26000021B219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8D0961264C26000021B219 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F1523B12654202A009C197C /* MyProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectCard.swift; sourceTree = "<group>"; };
 		6F8D095A264C25FF0021B219 /* SwiftUI_clone_coding_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_clone_coding_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8D095D264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_clone_coding_1App.swift; sourceTree = "<group>"; };
 		6F8D095F264C25FF0021B219 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				6F8D095D264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift */,
 				6F8D095F264C25FF0021B219 /* ContentView.swift */,
+				6F1523B12654202A009C197C /* MyProjectCard.swift */,
 				6F8D0961264C26000021B219 /* Assets.xcassets */,
 				6F8D0966264C26000021B219 /* Info.plist */,
 				6F8D0963264C26000021B219 /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1523B22654202A009C197C /* MyProjectCard.swift in Sources */,
 				6F8D0960264C25FF0021B219 /* ContentView.swift in Sources */,
 				6F8D095E264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift in Sources */,
 			);
