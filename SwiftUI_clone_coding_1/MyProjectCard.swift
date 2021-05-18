@@ -10,23 +10,38 @@ import SwiftUI
 struct MyProjectCard: View {
     var body: some View {
         VStack(alignment: .leading){
+            Rectangle()
+                .frame(height: 0)
             Text("sudo 클론 프로젝트")
                 .font(.title)
                 .fontWeight(.bold)
+                .padding(.bottom, 5)
                 Text("10AM ~ 11AM")
-                    .font(.system(size: 20))
+                    .foregroundColor(.secondary)
+                    .padding(.bottom, 10)
             HStack{
-                Circle()
+                Image("1")
+                    .resizable()  //image view 바로 밑에 resizable modifier는 국룰
+                    .clipShape(Circle())
                     .frame(width:50, height: 50)
-                Circle()
+                Image("2")
+                    .resizable()
+                    .clipShape(Circle())
                     .frame(width:50, height: 50)
-                Circle()
+                Image("3")
+                    .resizable()
+                    .clipShape(Circle())
                     .frame(width:50, height: 50)
+                
                 Spacer()
+                
                 Text("확인")
-                    .padding()
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(20)
+                    .frame(width: 80)
                     .background(Color.blue)
-                    .cornerRadius(30)
+                    .cornerRadius(20)
             }
         }
         .padding(30)
