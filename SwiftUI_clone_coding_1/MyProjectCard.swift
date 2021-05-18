@@ -10,23 +10,17 @@ import SwiftUI
 struct MyProjectCard: View {
     var body: some View {
         VStack(alignment: .leading){
-            Text("sudoswift clone project")
+            Text("sudo 클론 프로젝트")
                 .font(.title)
                 .fontWeight(.bold)
                 Text("10AM ~ 11AM")
-                    .font(.system(size: 15))
+                    .font(.system(size: 20))
             HStack{
                 Circle()
-                    .strokeBorder(Color.blue, lineWidth:4)
-                    .background(Circle().foregroundColor(.red))
                     .frame(width:50, height: 50)
                 Circle()
-                    .strokeBorder(Color.blue, lineWidth:4)
-                    .background(Circle().foregroundColor(.green))
                     .frame(width:50, height: 50)
                 Circle()
-                    .strokeBorder(Color.blue, lineWidth:4)
-                    .background(Circle().foregroundColor(.black))
                     .frame(width:50, height: 50)
                 Spacer()
                 Text("확인")
@@ -35,6 +29,9 @@ struct MyProjectCard: View {
                     .cornerRadius(30)
             }
         }
+        .padding(30)
+        .background(Color.yellow)
+        .cornerRadius(20)
     }
 }
 
