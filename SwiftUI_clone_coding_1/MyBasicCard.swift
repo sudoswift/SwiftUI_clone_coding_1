@@ -9,15 +9,22 @@ import SwiftUI
 
 struct MyBasicCard: View {
     var body: some View {
-        HStack{
-            Image(systemName: "flame.fill")
+        HStack(spacing: 20.0){
+            Image(systemName: "flag.fill")
                 .font(.system(size: 50))
                 .foregroundColor(.white)
-            VStack(alignment: .leading){
+            
+            VStack(alignment: .leading, spacing: 0){
+//                Rectangle()
+//                    .frame(height: 0)
+                Divider()
+                    .opacity(0)
                 Text("유튜브 클론 프로젝트")
-                    .font(.title2)
                     .fontWeight(.bold)
-                    .padding(.bottom, 3)
+                    .font(.system(size: 23))
+                    
+                Spacer()
+                    .frame(height:5 )
                 Text("8PM ~ 10PM")
             }
             .foregroundColor(.white)
