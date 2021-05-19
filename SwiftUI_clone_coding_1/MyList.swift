@@ -25,7 +25,10 @@ struct MyList: View {
                 }
             }
             .listRowInsets(EdgeInsets.init(top: 10, leading: 30, bottom: 10, trailing: 10))
+            
+            .listRowBackground(Color.yellow) // list의 section 속 backgroundColor 지정
         }
+        //list style change!!
 //        .listStyle(PlainListStyle()) // preset
         .listStyle(GroupedListStyle())
         
