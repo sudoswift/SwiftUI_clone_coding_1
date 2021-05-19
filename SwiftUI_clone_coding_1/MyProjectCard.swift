@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MyProjectCard: View {
+    
+    @State private var shouldShowAlert: Bool = false
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             Rectangle()
@@ -46,13 +49,31 @@ struct MyProjectCard: View {
                     )
                 Spacer()
                 
-                Text("확인")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding(20)
-                    .frame(width: 80)
-                    .background(Color.blue)
-                    .cornerRadius(20)
+                //button view 사용, 삼항연산자 사용 ? : , withAnimation 사용
+                // toggle()은 Bool 값을 true 이면 false로 false 이면 true로 바꿔준다.
+                //withAnimation 은 Swift가 애니메이션을 직접 자동으로 설정해준다.
+                //@State에서 선언한 변수 앞에 self. 를 붙여준다.
+                
+                Button(action: {
+                    withAnimation{
+                        self.shouldShowAlert.toggle()
+                        print(shouldShowAlert ? "확인 버튼 다시누름" : "확인 버튼 누름!")
+                    }
+
+                }){
+                    Text("확인")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(20)
+                        .frame(width: 80)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }
+                .alert(isPresented: $shouldShowAlert){
+                    Alert(title: Text("Alert 를 활용한 알람입니다."), message: Text("어떠신가요?"))
+                }
+                
+
             }
         }
         .padding(30)

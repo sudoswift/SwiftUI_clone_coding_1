@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwiftUI_clone_coding_1
 //
-//  Created by izvern on 2021/05/13.
+//  Created by izvern on 2021/05/19.
 //
 
 import SwiftUI
