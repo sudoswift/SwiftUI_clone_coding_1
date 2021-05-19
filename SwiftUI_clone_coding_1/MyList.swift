@@ -43,10 +43,7 @@ struct MyList: View {
         //list style change!!
 //        .listStyle(PlainListStyle()) // preset
         .listStyle(GroupedListStyle())
-        
-
-        
-        
+        .navigationBarTitle("내 목록")
     }
 }
 

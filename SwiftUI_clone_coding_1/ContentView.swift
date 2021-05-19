@@ -22,6 +22,7 @@ struct ContentView: View {
                             label: {
                                 Image(systemName: "line.horizontal.3")
                                     .font(.largeTitle)
+                                    .foregroundColor(.black)
                             })
                         
                         
@@ -58,6 +59,7 @@ struct ContentView: View {
                         )
                         .padding(10)
                 } // ZStack !!
+            .navigationBarHidden(true)
         } //NavigationView !!
 
 
