@@ -9,7 +9,24 @@ import SwiftUI
 
 struct MyList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        // List view 속 section view!!
+        List{
+            Section(header: Text("헤더임니당")){
+                ForEach(1...3, id: \.self) { itemIndex in
+                    MyCard(icon: "book.fill", title: "책읽기 \(itemIndex)", start: "1PM", end: "3PM", bgColor: Color.green)
+            }
+        }
+            Section(header: Text("헤더임니당")){
+                ForEach(1...3, id: \.self) { itemIndex in
+                    MyCard(icon: "book.fill", title: "책읽기 \(itemIndex)", start: "1PM", end: "3PM", bgColor: Color.blue)
+                }
+            }
+    }
+        
+
+        
+        
     }
 }
 
