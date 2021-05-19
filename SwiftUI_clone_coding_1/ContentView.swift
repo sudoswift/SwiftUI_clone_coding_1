@@ -58,7 +58,7 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                         )
                         .padding(10)
-                } // ZStack !!
+                } // ZStack !
             .navigationBarHidden(true)
         } //NavigationView !!
 
