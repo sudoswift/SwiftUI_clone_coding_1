@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             
-            VStack(alignment: .leading){
+            VStack(alignment: .leading, spacing: 0){
                 HStack{
                     Image(systemName: "line.horizontal.3")
                         .font(.largeTitle)
@@ -27,7 +27,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .padding()
                 
-                ScrollView{ //add scrollView
+                ScrollView(showsIndicators: false){ //add scrollView & 스크롤 바 없애기
                     VStack{
                         MyProjectCard()
                         MyBasicCard()
@@ -39,10 +39,9 @@ struct ContentView: View {
                         MyBasicCard()
                         MyBasicCard()
                     }
+                    .padding()
                 }
             }
-            .padding(.top, 10)
-            .padding(.horizontal, 20)
                 Circle()
                     .foregroundColor(.yellow)
                     .frame(width: 60, height: 60)
