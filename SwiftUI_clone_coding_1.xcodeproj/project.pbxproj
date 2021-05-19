@@ -15,6 +15,7 @@
 		6F8D0965264C26000021B219 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F8D0964264C26000021B219 /* Preview Assets.xcassets */; };
 		6F8D0970264C26000021B219 /* SwiftUI_clone_coding_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8D096F264C26000021B219 /* SwiftUI_clone_coding_1Tests.swift */; };
 		6F8D097B264C26000021B219 /* SwiftUI_clone_coding_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8D097A264C26000021B219 /* SwiftUI_clone_coding_1UITests.swift */; };
+		6FC5533A2655497E003DD210 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC553392655497E003DD210 /* MyCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6F8D0976264C26000021B219 /* SwiftUI_clone_coding_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_clone_coding_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8D097A264C26000021B219 /* SwiftUI_clone_coding_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_clone_coding_1UITests.swift; sourceTree = "<group>"; };
 		6F8D097C264C26000021B219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FC553392655497E003DD210 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				6F8D095F264C25FF0021B219 /* ContentView.swift */,
 				6F1523B12654202A009C197C /* MyProjectCard.swift */,
 				6F1523B32654334F009C197C /* MyBasicCard.swift */,
+				6FC553392655497E003DD210 /* MyCard.swift */,
 				6F8D0961264C26000021B219 /* Assets.xcassets */,
 				6F8D0966264C26000021B219 /* Info.plist */,
 				6F8D0963264C26000021B219 /* Preview Content */,
@@ -268,6 +271,7 @@
 				6F1523B22654202A009C197C /* MyProjectCard.swift in Sources */,
 				6F8D0960264C25FF0021B219 /* ContentView.swift in Sources */,
 				6F1523B42654334F009C197C /* MyBasicCard.swift in Sources */,
+				6FC5533A2655497E003DD210 /* MyCard.swift in Sources */,
 				6F8D095E264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
