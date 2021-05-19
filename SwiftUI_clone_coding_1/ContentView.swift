@@ -16,8 +16,15 @@ struct ContentView: View {
                 
                 VStack(alignment: .leading, spacing: 0){
                     HStack{
-                        Image(systemName: "line.horizontal.3")
-                            .font(.largeTitle)
+                        
+                        NavigationLink(
+                            destination: MyList(),
+                            label: {
+                                Image(systemName: "line.horizontal.3")
+                                    .font(.largeTitle)
+                            })
+                        
+                        
                         Spacer()
                         Image(systemName: "person.crop.circle.fill")
                             .font(.largeTitle)
@@ -50,8 +57,8 @@ struct ContentView: View {
                                 .foregroundColor(.white)
                         )
                         .padding(10)
-                }
-        }
+                } // ZStack !!
+        } //NavigationView !!
 
 
 
