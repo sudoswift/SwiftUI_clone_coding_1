@@ -30,14 +30,10 @@ struct ContentView: View {
                 ScrollView(showsIndicators: false){ //add scrollView & 스크롤 바 없애기
                     VStack{
                         MyProjectCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
-                        MyBasicCard()
+                        MyCard(icon: "tray.fill", title: "책상 정리하기", start: "10 AM", end: "11 AM", bgColor: Color.blue)
+                        MyCard(icon: "tv.fill", title: "영상 다시보기", start: "8 AM", end: "9 AM", bgColor: Color.red)
+                        MyCard(icon: "cart.fill", title: "마트 장보기", start: "11 AM", end: "12 AM", bgColor: Color.orange)
+                        MyCard(icon: "gamecontroller.fill", title: "롤 한판하기", start: "2 PM", end: "3 PM", bgColor: Color.black)
                     }
                     .padding()
                 }

@@ -5,6 +5,8 @@
 //  Created by izvern on 2021/05/19.
 //
 
+//변수를 활용해 다양한 view를 만들수있다.
+
 import SwiftUI
 
 struct MyCard: View {
