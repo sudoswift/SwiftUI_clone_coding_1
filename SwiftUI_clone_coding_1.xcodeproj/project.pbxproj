@@ -17,6 +17,7 @@
 		6F8D097B264C26000021B219 /* SwiftUI_clone_coding_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8D097A264C26000021B219 /* SwiftUI_clone_coding_1UITests.swift */; };
 		6FC5533A2655497E003DD210 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC553392655497E003DD210 /* MyCard.swift */; };
 		6FC5533C26556AEC003DD210 /* MyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC5533B26556AEC003DD210 /* MyList.swift */; };
+		6FC903CD265650A700A61615 /* MyProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC903CC265650A700A61615 /* MyProfileCard.swift */; };
 		6FE8F190265649BC004D1227 /* MyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8F18F265649BC004D1227 /* MyNavigationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		6F8D097C264C26000021B219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FC553392655497E003DD210 /* MyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCard.swift; sourceTree = "<group>"; };
 		6FC5533B26556AEC003DD210 /* MyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyList.swift; sourceTree = "<group>"; };
+		6FC903CC265650A700A61615 /* MyProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCard.swift; sourceTree = "<group>"; };
 		6FE8F18F265649BC004D1227 /* MyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,8 @@
 			children = (
 				6F8D095D264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift */,
 				6F8D095F264C25FF0021B219 /* ContentView.swift */,
+				6FC903CC265650A700A61615 /* MyProfileCard.swift */,
+				6FC903CB2656509700A61615 /* New Group */,
 				6FE8F18F265649BC004D1227 /* MyNavigationView.swift */,
 				6F1523B12654202A009C197C /* MyProjectCard.swift */,
 				6FC5533B26556AEC003DD210 /* MyList.swift */,
@@ -143,6 +147,13 @@
 				6F8D097C264C26000021B219 /* Info.plist */,
 			);
 			path = SwiftUI_clone_coding_1UITests;
+			sourceTree = "<group>";
+		};
+		6FC903CB2656509700A61615 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 				6F8D095E264C25FF0021B219 /* SwiftUI_clone_coding_1App.swift in Sources */,
 				6FC5533C26556AEC003DD210 /* MyList.swift in Sources */,
 				6FE8F190265649BC004D1227 /* MyNavigationView.swift in Sources */,
+				6FC903CD265650A700A61615 /* MyProfileCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
