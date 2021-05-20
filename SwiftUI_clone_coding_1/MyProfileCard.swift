@@ -11,17 +11,7 @@ struct MyProfileCard: View {
     var body: some View {
         NavigationView{
             VStack{
-                Image("아이번")
-                    .resizable()
-                    .clipShape(Circle())
-                    .scaledToFit()
-                    .overlay(
-                        Circle()
-                            .stroke(Color.yellow, lineWidth: 15)
-                    )
-                    .frame(width: 350)
-                    .shadow(color: .black, radius: 10, x: 5, y: 5)
-                    .padding(.bottom, 40)
+                MyCircleImageView()
                 Text("SUDO SwiftUI")
                     .font(.title)
                     .fontWeight(.bold)
