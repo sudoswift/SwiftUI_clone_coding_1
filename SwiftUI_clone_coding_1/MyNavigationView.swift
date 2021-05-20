@@ -35,8 +35,8 @@ struct MyNavigationView: View {
     }
 }
 
-struct MyNavigationView_Previews: PreviewProvider {
-    static var previews: some View {
-        MyNavigationView()
-    }
-}
+//struct MyNavigationView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyNavigationView()
+//    }
+//}

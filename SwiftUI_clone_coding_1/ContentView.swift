@@ -28,9 +28,14 @@ struct ContentView: View {
                         
                         Spacer()
                         
-                        
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.largeTitle)
+                        NavigationLink(
+                            destination: MyProfileCard(),
+                            label: {
+                                Image(systemName: "person.crop.circle.fill")
+                                    .font(.largeTitle)
+                                    .foregroundColor(.black)
+                            })
+
                     }
                     .padding()
                     Text("SUDO 클론 프로젝트")
