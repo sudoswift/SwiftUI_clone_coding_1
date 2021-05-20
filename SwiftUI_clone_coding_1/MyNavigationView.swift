@@ -9,7 +9,14 @@ import SwiftUI
 
 struct MyNavigationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+//            Text("MyNavigationView")
+                
+            MyList()
+                // navigationBarTitle 의 displayMode 의 preset 은 large 이당.
+                .navigationBarTitle("안녕하세요!", displayMode: .large)
+        }
+        
     }
 }
 
