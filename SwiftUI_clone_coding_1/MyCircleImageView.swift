@@ -7,17 +7,21 @@
 
 import SwiftUI
 
+
 struct MyCircleImageView: View {
+    
+    var imageString: String
+    
     var body: some View {
-        Image("아이번")
+        Image(imageString)
             .resizable()
             .clipShape(Circle())
             .scaledToFit()
             .overlay(
                 Circle()
-                    .stroke(Color.yellow, lineWidth: 15)
+                    .strokeBorder(Color.yellow, lineWidth: 15)
             )
-            .frame(width: 350)
+            .frame(width: 350, height: 350)
             .shadow(color: .black, radius: 10, x: 5, y: 5)
             .padding(.bottom, 40)
     }
@@ -25,6 +29,6 @@ struct MyCircleImageView: View {
 
 struct MyCircleImageView_Previews: PreviewProvider {
     static var previews: some View {
-        MyCircleImageView()
+        MyCircleImageView(imageString: "아이번")
     }
 }

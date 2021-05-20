@@ -23,11 +23,9 @@ struct ContentView: View {
                                 Image(systemName: "line.horizontal.3")
                                     .font(.largeTitle)
                                     .foregroundColor(.black)
-                            })
+                            })// NavigationLink
                             .navigationBarTitle("")
                             .navigationBarHidden(true)
-                        
-                        
                         
                         Spacer()
                         
@@ -37,9 +35,7 @@ struct ContentView: View {
                                 Image(systemName: "person.crop.circle.fill")
                                     .font(.largeTitle)
                                     .foregroundColor(.black)
-                            })
-                            .navigationBarTitle("내 프로피")
-                            .navigationBarHidden(true)
+                            }) // NavigationLink
 
                     }
                     .padding()

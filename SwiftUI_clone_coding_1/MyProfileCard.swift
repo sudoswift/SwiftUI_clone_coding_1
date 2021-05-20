@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct MyProfileCard: View {
+    
     var body: some View {
-        NavigationView{
+        
+        ScrollView{
             VStack{
-                MyCircleImageView()
+                MyCircleImageView(imageString: "아이번")
                 Text("SUDO SwiftUI")
                     .font(.title)
                     .fontWeight(.bold)
@@ -24,17 +26,28 @@ struct MyProfileCard: View {
                         .padding()
                         .background(Color.black)
                         .foregroundColor(.white)
-                        .cornerRadius(20)
+                        .cornerRadius(40)
                     Text("카카오톡 가기")
                         .padding()
                         .background(Color.yellow)
                         .foregroundColor(.black)
                         .cornerRadius(40)
                 }.padding(.top, 20)
+                Spacer()
             } //VStack
-            .navigationBarHidden(true)
-        } // NavigationView !!
+            .navigationBarHidden(false)
+        } // ScrollView !!
         .navigationBarTitle("내 프로필")
+        .navigationBarItems(trailing:
+        NavigationLink(
+            destination: Text("설정 화면 입니다").font(.largeTitle).fontWeight(.bold).lineLimit(1),
+            label: {
+                Image(systemName: "gear")
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
+            })
+        
+        )
 
     }
 }
