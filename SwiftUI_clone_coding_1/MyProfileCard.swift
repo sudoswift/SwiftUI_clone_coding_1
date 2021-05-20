@@ -46,7 +46,6 @@ struct MyProfileCard: View {
                     .font(.largeTitle)
                     .foregroundColor(.black)
             })
-        
         )
 
     }
