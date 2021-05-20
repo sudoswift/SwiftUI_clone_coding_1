@@ -27,6 +27,8 @@ struct ContentView: View {
                         
                         
                         Spacer()
+                        
+                        
                         Image(systemName: "person.crop.circle.fill")
                             .font(.largeTitle)
                     }
