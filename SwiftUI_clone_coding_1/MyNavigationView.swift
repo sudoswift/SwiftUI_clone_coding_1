@@ -15,6 +15,21 @@ struct MyNavigationView: View {
             MyList()
                 // navigationBarTitle 의 displayMode 의 preset 은 large 이당.
                 .navigationBarTitle("안녕하세요!", displayMode: .large)
+                .navigationBarItems(leading:
+                    Button(action: {
+                        print("click button")
+                    }){
+                        Text("후후")
+                }
+                ,trailing:
+                    NavigationLink(destination:
+                    Text("넘어온화면임니다.")
+                    ){
+                        Image(systemName: "bookmark.fill")
+                            .font(.system(size: 30))
+                            .foregroundColor(.black)
+                    }
+                )
         }
         
     }
