@@ -14,7 +14,7 @@ struct MyNavigationView: View {
                 
             MyList()
                 // navigationBarTitle 의 displayMode 의 preset 은 large 이당.
-                .navigationBarTitle("안녕하세요!", displayMode: .large)
+//                .navigationBarTitle("안녕하세요!", displayMode: .large)
                 .navigationBarItems(leading:
                     Button(action: {
                         print("click button")
@@ -35,8 +35,8 @@ struct MyNavigationView: View {
     }
 }
 
-//struct MyNavigationView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MyNavigationView()
-//    }
-//}
+struct MyNavigationView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyNavigationView()
+    }
+}

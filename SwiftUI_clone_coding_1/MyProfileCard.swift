@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MyProfileCard: View {
     var body: some View {
-        
         NavigationView{
             VStack{
                 Image("아이번")
@@ -43,8 +42,10 @@ struct MyProfileCard: View {
                         .cornerRadius(40)
                 }.padding(.top, 20)
             } //VStack
-            .navigationBarTitle(Text("내 프로필"))
-        } // NavigationView
+            .navigationBarHidden(true)
+        } // NavigationView !!
+        .navigationBarTitle("내 프로필")
+
     }
 }
 

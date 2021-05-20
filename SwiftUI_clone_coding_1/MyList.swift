@@ -29,7 +29,7 @@ struct MyList: View {
             Section(
                 header: Text("내일 할 일")
                     .font(.headline)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.bold)
                     .foregroundColor(.black))
             {
                 ForEach(1...20, id: \.self) { itemIndex in

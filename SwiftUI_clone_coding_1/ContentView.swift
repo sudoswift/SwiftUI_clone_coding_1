@@ -24,6 +24,9 @@ struct ContentView: View {
                                     .font(.largeTitle)
                                     .foregroundColor(.black)
                             })
+                            .navigationBarTitle("")
+                            .navigationBarHidden(true)
+                        
                         
                         
                         Spacer()
@@ -35,6 +38,8 @@ struct ContentView: View {
                                     .font(.largeTitle)
                                     .foregroundColor(.black)
                             })
+                            .navigationBarTitle("내 프로피")
+                            .navigationBarHidden(true)
 
                     }
                     .padding()
@@ -66,7 +71,9 @@ struct ContentView: View {
                         )
                         .padding(10)
                 } // ZStack !
+            .navigationBarTitle("")
             .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         } //NavigationView !!
 
 
