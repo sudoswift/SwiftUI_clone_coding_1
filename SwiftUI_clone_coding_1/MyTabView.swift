@@ -9,7 +9,33 @@ import SwiftUI
 
 struct MyTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            Text("1번 탭뷰") // 화면에 보여질 View 부분
+                .font(.system(size: 60))
+                .fontWeight(.bold)
+                .tabItem {
+                    Image(systemName: "airplane")
+                    Text("1번")
+                }
+                .tag(0)
+            Text("2번 탭뷰")
+                .font(.system(size: 60))
+                .fontWeight(.bold)
+                .tabItem {
+                    Image(systemName: "flame.fill")
+                    Text("1번")
+                }
+                .tag(1)
+            Text("3번 탭뷰")
+                .font(.system(size: 60))
+                .fontWeight(.bold)
+                .tabItem {
+                    Image(systemName: "doc.fill")
+                    Text("1번")
+                }
+                .tag(2)
+        }  // TabView !!
+
     }
 }
 
