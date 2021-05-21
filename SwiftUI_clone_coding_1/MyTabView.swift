@@ -21,14 +21,14 @@ struct MyTabView: View {
                 .font(.system(size: 60))
                 .tabItem {
                     Image(systemName: "flame.fill")
-                    Text("1번")
+                    Text("2번")
                 }
                 .tag(1)
             MyView(bgColor: .blue, myViewText: "3번 탭뷰")
                 .font(.system(size: 60))
                 .tabItem {
                     Image(systemName: "doc.fill")
-                    Text("1번")
+                    Text("3번")
                 }
                 .tag(2)
         }  // TabView !!
