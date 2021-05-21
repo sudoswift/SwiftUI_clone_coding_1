@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct MyView: View {
+    
+    var bgColor: Color
+    var myViewText: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack{
+            bgColor
+                .edgesIgnoringSafeArea(.all)
+            Text(myViewText)
+                .foregroundColor(.white)
+                .font(.system(size: 60, weight: .bold))
+        } // ZStack !!
     }
 }
 
 struct MyView_Previews: PreviewProvider {
     static var previews: some View {
-        MyView()
+        MyView(bgColor: .orange, myViewText: "마이뷰임")
     }
 }
